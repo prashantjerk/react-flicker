@@ -3,6 +3,8 @@
   height: fit-content;
   margin: auto;
   margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 .feed_card {
   width: 200px;
