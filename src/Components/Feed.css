@@ -1,0 +1,73 @@
+.feed {
+  width: 90vw;
+  height: fit-content;
+  margin: auto;
+  margin-top: 40px;
+}
+.feed_card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  border: none;
+}
+
+.feed_card img {
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.title-wrapper {
+  border-radius: 10px;
+  z-index: 1;
+  background: rgb(12, 13, 22);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 13, 22, 0.8755835097710959) 28%,
+    rgba(0, 0, 0, 0.10555555555555551) 100%
+  );
+  position: absolute;
+  top: 0;
+}
+
+.title-wrapper > h2,
+p {
+  padding: 10px;
+  background: transparent;
+}
+
+.title-wrapper h2 {
+  color: #ffffffd8;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.title-wrapper p {
+  color: #ffffffda;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: -15px;
+}
+
+h2,
+p,
+button {
+  z-index: 1;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: #fff;
+  border: none;
+  background-color: rgba(161, 7, 7, 0.72);
+  height: 35px;
+  border-radius: 20px;
+}

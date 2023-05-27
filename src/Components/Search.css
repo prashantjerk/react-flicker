@@ -1,0 +1,25 @@
+.search {
+  min-height: 50px;
+  width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  border: 1px rgb(106, 102, 102) solid;
+  border-radius: 40px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  color: white;
+  opacity: 1;
+  outline: none;
+}
+
+.search .MuiSvgIcon-root {
+  color: #ffffffd2;
+  height: 30px !important;
+  width: 30px !important;
+  cursor: pointer;
+}
