@@ -11,3 +11,9 @@
   height: 100vh;
   width: 100vw;
 }
+
+.not_avail{
+  color: white;
+  margin-top: 140px;
+  text-align: center;
+}

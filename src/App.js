@@ -36,9 +36,19 @@ function App() {
 
   const API = "http://www.omdbapi.com/?apikey=83c91151&";
   const getMovie = async (title) => {
-    const response = await fetch(`${API}&s=${title}`);
-    const data = await response.json();
-    setMovies(data.Search);
+    try {
+      const response = await fetch(`${API}&s=${title}`);
+      const data = await response.json();
+
+      if (data.Search) {
+        setMovies(data.Search);
+      } else {
+        setMovies([]);
+      }
+    } catch (error) {
+      console.error("Error:", error.message);
+      setMovies([]);
+    }
   };
 
   useEffect(() => {
@@ -66,7 +76,11 @@ function App() {
 
         <SearchIcon onClick={() => getMovie(search)} />
       </div>
-      <Feed movies={movies} key={movies} />
+      {movies.length > 0 ? (
+        <Feed movies={movies} />
+      ) : (
+        <h1 className="not_avail">Movie Not Listed in the API</h1>
+      )}
     </div>
   );
 }
