@@ -5,6 +5,7 @@
   margin-top: 40px;
   flex-wrap: wrap;
   gap: 25px;
+  justify-content: center;
 }
 .feed_card {
   width: 200px;
@@ -13,7 +14,7 @@
   border: none;
 }
 
-.feed_card img {
+.feed_card .poster {
   border: none;
   border-radius: 10px;
   position: absolute;
@@ -24,7 +25,8 @@
 }
 
 .title-wrapper {
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 9px 9px 0 0;
   z-index: 1;
   background: rgb(12, 13, 22);
   background: linear-gradient(
@@ -72,4 +74,24 @@ button {
   background-color: rgba(161, 7, 7, 0.72);
   height: 35px;
   border-radius: 20px;
+}
+.no_poster {
+  z-index: 0;
+  background: rgb(148, 142, 142);
+  height: 100px;
+}
+
+.no_poster > p {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffffa8;
+  line-height: 35px;
 }
