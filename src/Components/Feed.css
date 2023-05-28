@@ -7,11 +7,17 @@
   gap: 25px;
   justify-content: center;
 }
+
 .feed_card {
   width: 200px;
   height: 300px;
   position: relative;
   border: none;
+  transition: transform 200ms ease-in-out;
+}
+
+.feed_card:hover {
+  transform: scale(1.05);
 }
 
 .feed_card .poster {
@@ -74,7 +80,14 @@ button {
   background-color: rgba(161, 7, 7, 0.72);
   height: 35px;
   border-radius: 20px;
+  transition: background-color 200ms ease-in ;
 }
+
+button:hover{
+  background-color: rgba(161, 7, 7, 0.8);
+
+}
+
 .no_poster {
   z-index: 0;
   background: rgb(148, 142, 142);
